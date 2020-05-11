@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Animal Crossing: New Horizons Hybrid Calculator</title>
+        <style type="text/css">
+            html {
+                font-size: 16px;
+            }
+
+            body {
+                font-family: "DejaVu Sans",Helvetica,Arial,sans-serif;
+                color: rgb(51, 51, 51);
+                line-height: 1.6;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0.8em 0;
+                padding: 0;
+            }
+
+            table tr {
+                break-inside: avoid;
+            }
+
+            table tr th {
+                background-color: #f8f8f8;
+                border: 1px solid #dfdfdf;
+                border-bottom: 0;
+                font-weight: bold;
+                margin: 0;
+                padding: 6px 13px;
+            }
+
+            table tr td {
+                border: 1px solid #dfdfdf;
+                margin: 0;
+                padding: 6px 13px;
+                text-align: center;
+            }
+
+            code {
+                background-color: #f4f4f4;
+                border: 1px solid #e8e8e8;
+                border-radius: 3px;
+                font-size: 0.9em;
+                padding: 0 2px 0 2px;
+            }
+
+            img {
+                width:32px;
+                height:32px;
+            }
+
+            #input {
+                display: grid;
+                grid-column-gap: 10px;
+                grid-template-columns: max-content max-content;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="input" hidden>
+            <label for="species">Species</label>
+            <select id="species">
+                <option value="rose" selected>Rose</option>
+                <option value="cosmo">Cosmo</option>
+                <option value="lily">Lily</option>
+                <option value="pansy">Pansy</option>
+                <option value="tulip">Tulip</option>
+                <option value="hyacinth">Hyacinth</option>
+                <option value="mum">Mum</option>
+                <option value="windflower">Windflower</option>
+            </select>
+            <label for="a">Flower A</label><input id="a" type="text"/>
+            <label for="b">Flower B</label><input id="b" type="text"/><br/>
+            <button id="calculate" type="button">Calculate</button>
+        </div>
+        <div id="output"></div>
+        <script defer src="main.dart.js" type="text/javascript"></script>
+    </body>
+</html>
